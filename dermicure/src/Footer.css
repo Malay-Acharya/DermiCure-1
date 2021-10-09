@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dblue);
+  height: 700px;
+  width: 100%;
+  margin-left: 0px;
+  left: 0;
+}
+
+.footer-img {
+  font-size: 160px;
+  text-align: end;
+  padding-right: 100px;
+  color: rgba(265, 265, 265, 0.09);
+  font-weight: 1000;
+}
+
+.main-footer {
+  display: flex;
+}
+
+.footer-logo {
+  justify-content: flex-start;
+  width: 33%;
+}
+
+.footer-nav {
+  color: var(--wht);
+  margin-bottom: 50px;
+  font-size: 20px;
+  width: 33%;
+  padding-left: 100px;
+}
+
+.footer-nav-heading {
+  display: block;
+  margin: 30px 0;
+}
+
+.footer-nav-list {
+  margin: 50px 0;
+}
+
+.footer-nav-items {
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.btn-footer {
+  background-color: var(--dblue);
+  border: 2px solid var(--wht);
+}
+
+.arrow-footer {
+  display: inline-block;
+  padding-left: 230px;
+}
+
+.f1 {
+  padding-left: 199px;
+}
+
+.copyright {
+  margin-top: 74px;
+  text-align: center;
+  background-color: #000000;
+  height: 80px;
+  width: 100%;
+  padding: 30px 0;
+  color: var(--wht);
+  font-size: 20px;
+}
+
+.logo-img {
+  width: 250px;
+  max-height: 200px;
+  margin-left: 80px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.logo-text {
+  color: var(--wht);
+  display: block;
+  margin-left: 110px;
+  font-size: 28px;
+}
+
+.contact {
+  font-size: 20px;
+  color: var(--wht);
+  padding-left: 50px;
+}
+
+.contact-peeps {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.contact-text {
+  display: block;
+  margin-bottom: 50px;
+}
+#ft-1 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#ft-2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.malay {
+  padding-left: 150px;
+}
+.ved {
+  padding-left: 161px;
+}
+.drishti {
+  padding-left: 144px;
+}
+.abhi {
+  padding-left: 95px;
+}
+.komal {
+  padding-left: 173px;
+}
