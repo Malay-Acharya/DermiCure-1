@@ -1,7 +1,7 @@
 import React from 'react'
 import './Start.css'
 import Illustration from './Illustration';
-
+import {Link} from "react-router-dom"
 
 
 
@@ -21,12 +21,12 @@ function Start() {
     return (
         <div className="full">
                        <nav>
-
+       <Link to='/' style={{textDecoration:"none"}}>
        <div class="left-nav">
             <span class="header-text-1">dermi</span>
             <span class="header-text-2">CURE</span>
         </div>
-
+       </Link>
         <div class="right-nav">
             <div class="predict">
                 Predict
@@ -46,16 +46,17 @@ function Start() {
             <li class="popup-menu-items">Contribute</li>
         </ul>
         <div class="btn-text">
-
+        <Link to='/predict'>
             <button class="btn btn-predict">
               Start Predicting
             </button>
-
+            </Link>
+            <Link to='/predict'>
             <button class="btn btn-arrow">
             <i class="fas fa-arrow-right"></i>
                 
             </button>
-
+            </Link>
         </div>
     </div>
 
@@ -68,16 +69,17 @@ function Start() {
                 A MISSION TOWARDS HEALTHY <br/><span  className="main-section-text-skin">SKIN</span> 
             </div>
             <div  className="btn-text">
-
+            <Link to='/predict'>
             <button class="btn btn-predict">
               Start Predicting
             </button>
-
+            </Link>
+            <Link to='/predict'>
             <button class="btn btn-arrow">
             <i class="fas fa-arrow-right"></i>
                 
             </button>
-  
+            </Link>
             </div>
         </div>
         <div  className="right-section">          

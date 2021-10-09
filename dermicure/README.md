@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# dermiCURE
+dermiCURE is a website that makes use of a machine learning model to read images of skin diseases provided by the user and then predict which disease it is and give other important information to the user.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About Our Model
+Our model makes use of machine learning concepts to read a user-given image relating to skin diseases our model is trained to identify and give us the results of the identification it performs. Our API then takes this information and provides the user with all the necessary details concerning the disease.
+### Technologies Used
+* **SMOTE Algorithm:** SMOTE is an oversampling technique where the synthetic samples are generated for the minority class. This algorithm helps to overcome the overfitting problem posed by random oversampling.
 
-## Available Scripts
 
-In the project directory, you can run:
+**Data before oversampling**
 
-### `npm start`
+![](https://i.imgur.com/EDjxioa.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Data after oversampling**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![](https://i.imgur.com/CURNnqM.png)
+    
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Random Forest Classifier:** Random forest, consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction
+## About Our Dataset
+Our dataset extends to over 10,000 images pertaining to 7 labels namely :
+* Bowen's Disease
+* Basal Cell Carcinoma
+* Benign Keratosis-like Lesions
+* Dermatofibroma
+* Melanoma
+* Melanocytic Nevi
+* Vascular Lesions
+## Rules
+1. There should be enough light in the room when the user is clicking the picture.
+2. The users have to make sure that the picture is clear and not blurred.
+3. Please avoid using any kind of filters on the photos.
+4. Make sure that the images are in .jpg format.
+## Test Image Results
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Basal Cell Carcinoma, Dermatofibroma, Basal Cell Carcinoma, Dermatofibroma [2,4,2,4]|
+| -------- |
+| ![](https://i.imgur.com/uaeN5qo.png)
+     

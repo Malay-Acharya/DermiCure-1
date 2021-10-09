@@ -35,7 +35,7 @@ function Footer() {
             <div className="contact">
                 <span className="footer-nav-heading contact-text">Contact US</span>
                 <ul className="contact-list">
-              
+                    {/* <li className="contact-peeps">Malay Acharya <span className="footer-icons malay" ><i className="fab fa-linkedin-in"></i> @</span></li> */}
                     <li className="contact-peeps">Vedanta Koul <span className="footer-icons ved"><i className="fab fa-linkedin-in"></i> @</span></li>
                     <li className="contact-peeps">Drishti Awasthi <span className="footer-icons drishti"><i className="fab fa-linkedin-in"></i> @</span></li>
                     <li className="contact-peeps">Abhinandan Thakur <span className="footer-icons abhi"><i className="fab fa-linkedin-in"></i> @</span></li>

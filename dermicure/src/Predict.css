@@ -1,0 +1,339 @@
+:root {
+  --dblue: #000f2d;
+  --lblue: #233751;
+  --org: #dd8a22;
+  --wht: #e9eaec;
+  --lgrey: #8fa0b4;
+  --blck: #454545;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.left-nav {
+  font-size: 0;
+}
+
+[class*="header-text"] {
+  font-size: 25px;
+}
+
+.header-text-1 {
+  color: var(--lblue);
+}
+
+.header-text-2 {
+  color: var(--org);
+}
+
+.text-main {
+  color: var(--org);
+}
+
+.right-nav {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  background-color: grey;
+  height: 90px;
+  align-items: center;
+}
+
+.predict,
+.hamburg {
+  height: inherit;
+  text-align: center;
+  padding: 11% 0;
+  color: var(--blck);
+}
+
+.predict {
+  background-color: var(--wht);
+  width: 60%;
+}
+
+.hamburg {
+  background-color: var(--lgrey);
+  width: 40%;
+}
+
+section {
+  display: flex;
+  min-height: 500px;
+
+  margin-top: 15px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.main-section-text {
+  color: var(--lblue);
+  font-size: 60px;
+  max-width: 50%;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+
+.main-section-text-skin {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 5px solid var(--lblue);
+}
+
+.btn {
+  background-color: var(--org);
+  color: var(--wht);
+  font-size: 17px;
+  padding: 15px 20px;
+  border: none;
+}
+
+.first-text {
+  max-width: 50%;
+  padding-left: 20px;
+  border-left: 3px solid var(--org);
+  margin-bottom: 70px;
+  font-size: 18px;
+}
+
+[class*="function-text"] {
+  color: var(--lblue);
+  font-size: 40px;
+  max-width: 50%;
+  font-weight: 900;
+  padding-bottom: 25px;
+}
+
+.timeline-container::before,
+.list-updates::before,
+.list-updates .update::before {
+  content: "";
+}
+.timeline-container::before,
+.list-updates::before,
+.list-updates .update::before,
+.all-updates {
+  position: absolute;
+}
+.timeline-container,
+.list-updates .update,
+.list-updates {
+  position: relative;
+}
+.timeline-container {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 2rem 2rem 7rem 3rem;
+  border-radius: 5px;
+  max-width: 320px;
+  margin: 1rem;
+}
+
+.head {
+  margin-bottom: 3rem;
+  color: #555;
+}
+.head .title {
+  font-size: 1.5rem;
+}
+.head .details {
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.list-updates {
+  list-style: none;
+}
+.list-updates::before {
+  height: 100%;
+  width: 2px;
+  background-color: #d1d6e6;
+  left: -1rem;
+  top: 2.5rem;
+}
+.list-updates .update {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.15);
+}
+.list-updates .update::before {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #d1d6e6;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(-1rem - 5px);
+}
+
+.update .time {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.update p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.all-updates {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 -2px 12px -5px rgba(0, 0, 0, 0.1);
+}
+.all-updates .all {
+  cursor: pointer;
+  border: 1px solid #4fb3fa;
+  background-color: transparent;
+  padding: 0.7rem 2rem;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  width: 75%;
+  transition: all 0.2s linear;
+}
+.all-updates .all:hover {
+  color: #fff;
+  background: #4fb3fa;
+}
+
+.function-text-inner {
+  color: var(--org);
+}
+
+.function-text-1::after {
+  content: "Let's have a look";
+  display: block;
+  font-size: 15px;
+}
+
+.function-text-2::after {
+  content: "You've come to the right place.";
+  display: block;
+  font-size: 15px;
+}
+
+.basic-text {
+  max-width: 35%;
+  padding-bottom: 25px;
+}
+
+/* popup menu */
+
+.popup-menu {
+  background-color: var(--lblue);
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-menu-li {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: center;
+  gap: 50px;
+  font-size: 24px;
+  color: var(--wht);
+  text-align: center;
+}
+
+.popup-menu-items {
+  list-style-type: none;
+}
+
+.popup-close {
+  background-color: var(--wht);
+  position: absolute;
+  right: 0px;
+  width: 115.925px;
+  text-align: center;
+  min-height: 90px;
+  padding: 5% 0;
+  font-size: 25px;
+}
+
+/* page2. */
+
+.function-text-3::after {
+  content: "Some Rules to keep in mind";
+  display: block;
+  font-size: 15px;
+}
+
+.container-page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+.container-page2-prediction {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+.upload {
+  background-color: var(--lblue);
+}
+
+.upload-main {
+  width: 30%;
+  text-align: center;
+
+  padding-right: 40px;
+}
+
+.upload-image {
+  height: 300px;
+  background-color: var(--dblue);
+  margin-bottom: 20px;
+}
+
+.symptoms-main {
+  width: 40%;
+  padding-left: 60px;
+}
+
+.btn-final {
+  margin-left: 27%;
+}
+
+.prediction-input {
+  display: block;
+  margin-bottom: 30px;
+}

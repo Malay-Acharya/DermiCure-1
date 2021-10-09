@@ -1,7 +1,7 @@
 import React from 'react'
 import './AI.css'
 import aiIllustration from './ai.png'
-
+import {Link} from "react-router-dom"
 
 function AI() {
     return (
@@ -18,7 +18,7 @@ Cheers to the future!!
      </p>
      <div className="ai">
 
-
+    <Link to='https://github.com/abhinandant34/acm-horizon'>
     <div className="btn-text">
         <button className="btn btn-predict">
             Contribute
@@ -27,7 +27,7 @@ Cheers to the future!!
             <i className="fas fa-arrow-right"></i>
         </button>
     </div>
-
+    </Link>
 
      </div>
             
