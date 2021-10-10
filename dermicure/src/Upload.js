@@ -5,7 +5,7 @@ const axios = require("axios");
 
 
 export class App extends Component {
-    constructor(props) {
+	constructor(props) {
         super(props);
         this.state ={
             file: null
@@ -24,43 +24,60 @@ export class App extends Component {
         };
         axios.post("https://dermicure.herokuapp.com/api/upload",formData)
             .then((response) => {
+				console.log(response)
+				localStorage.setItem(`links`,JSON.stringify(response.data));
                 console.log("file is submitter");
             }).catch((error) => {
         });
     }
     onChange(e) {
         this.setState({file:e.target.files[0]});
-        console.log("here....");
+		console.log("here....");
     }
+	
+  state={
+    profileImg:'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'
+  }
 
+  /*imageHandler = (e) => {
+    const reader = new FileReader();
+    reader.onload = () =>{
+      if(reader.readyState === 2){
+        this.setState({profileImg: reader.result})
+      }
+    }
+    reader.readAsDataURL(e.target.files[0])
+  };
+  */
+  
 	render() {
-		const { profileImg} = this.state
-			return (
-				<form onSubmit={this.onFormSubmit}>
-				<div className="page">
-					<div className="container">
-						<h1 className="heading">Add the Image</h1>
-						<div className="img-holder">
-							<img src={profileImg} alt="" id="img" className="img" />
-						</div>
-					
-						<input type="file" accept="image/*" name="myImage" id="input" onChange= {this.onChange} />
-						<div className="label">
-					  <label className="image-upload" htmlFor="input">
-							
-							Choose your Photo
-						</label>
-					 </div>
+    const { profileImg} = this.state
+		return (
+			<form onSubmit={this.onFormSubmit}>
+			<div className="page">
+				<div className="container">
+					<h1 className="heading">Add the Image</h1>
+					<div className="img-holder">
+						<img src={profileImg} alt="" id="img" className="img" />
 					</div>
-	
-					<div className="button">
-						<button className="button-up" type="submit">PREDICT</button>
-					</div>
-					
+				
+					<input type="file" accept="image/*" name="file" id="input" onChange= {this.onChange} />
+					<div className="label">
+         		 <label className="image-upload" htmlFor="input">
+						
+						Choose your Photo
+					</label>
+                 </div>
 				</div>
-				</form>
-			);
-		}
+
+				<div className="button">
+					<Link to='/results'><button className="button-up" type="submit">PREDICT</button></Link>
+				</div>
+				
+			</div>
+			</form>
+		);
 	}
-	
-	export default App;
+}
+
+export default App;
