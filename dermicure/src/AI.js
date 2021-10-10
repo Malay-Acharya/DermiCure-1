@@ -18,7 +18,7 @@ Cheers to the future!!
      </p>
      <div className="ai">
 
-    <Link to='https://github.com/abhinandant34/acm-horizon'>
+    <Link to='https://github.com/abhinandant34/DermiCure'>
     <div className="btn-text">
         <button className="btn btn-predict">
             Contribute
