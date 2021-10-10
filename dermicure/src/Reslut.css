@@ -1,0 +1,80 @@
+:root {
+  --dblue: #000f2d;
+  --lblue: #233751;
+  --org: #dd8a22;
+  --wht: #e9eaec;
+  --lgrey: #8fa0b4;
+  --blck: #454545;
+}
+.result {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  color: var(--dblue);
+  margin-bottom: 80px;
+}
+.Results-about {
+  margin-bottom: 100px;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.result-left {
+  width: 45%;
+  border-left: 5px solid var(--org);
+  margin-right: 5%;
+}
+.result-right {
+  width: 45%;
+  border-left: 5px solid var(--org);
+  margin-left: 5%;
+}
+.result-name {
+  margin: 20px;
+}
+.result-name-heading {
+  font-size: 32px;
+}
+.result-name-about {
+  font-size: 24px;
+}
+
+.result-cs {
+  margin: 20px;
+}
+.result-cs-heading {
+  font-size: 32px;
+}
+.result-cs-about {
+  font-size: 24px;
+}
+
+.result-hospital {
+  margin: 20px;
+}
+.result-hospital-heading {
+  font-size: 32px;
+}
+.result-hospital-about {
+  font-size: 24px;
+}
+
+.result-what {
+  margin: 20px;
+}
+.result-what-heading {
+  font-size: 32px;
+}
+.result-what-about {
+  font-size: 24px;
+}
+
+.result-prevention {
+  margin: 20px;
+}
+.result-prevention-heading {
+  font-size: 32px;
+}
+.result-prevention-about {
+  font-size: 24px;
+}

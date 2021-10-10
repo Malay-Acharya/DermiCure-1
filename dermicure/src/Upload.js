@@ -5,6 +5,7 @@ const axios = require("axios");
 
 
 export class App extends Component {
+	
 	constructor(props) {
         super(props);
         this.state ={
@@ -71,7 +72,7 @@ export class App extends Component {
 				</div>
 
 				<div className="button">
-					<Link to='/results'><button className="button-up" type="submit">PREDICT</button></Link>
+					<button className="button-up" type="submit">PREDICT</button>
 				</div>
 				
 			</div>
