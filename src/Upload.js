@@ -80,6 +80,7 @@ export class App extends Component {
 
 				<div className="button">
 					<button className="button-up" type="submit">PREDICT</button>
+          <Link to="/results"><button className="button-up" >RESULT</button></Link>
 				</div>
 				
 			</div>
