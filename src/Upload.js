@@ -32,6 +32,13 @@ export class App extends Component {
         });
     }
     onChange(e) {
+		const reader = new FileReader();
+    reader.onload = () =>{
+      if(reader.readyState === 2){
+        this.setState({profileImg: reader.result})
+      }
+    }
+    reader.readAsDataURL(e.target.files[0])
         this.setState({file:e.target.files[0]});
 		console.log("here....");
     }
