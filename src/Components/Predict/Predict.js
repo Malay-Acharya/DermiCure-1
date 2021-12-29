@@ -1,6 +1,6 @@
 import React from 'react'
 import './Predict.css'
-import Upload from './Upload'
+import Upload from './Upload/Upload'
 import {Link} from "react-router-dom"
 
 

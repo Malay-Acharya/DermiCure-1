@@ -1,6 +1,6 @@
 import React from 'react'
 import './Start.css'
-import Illustration from './Illustration';
+import Illustration from './Illustration/Illustration';
 import {Link} from "react-router-dom"
 
 
