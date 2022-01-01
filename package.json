@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "es6-promise": "^4.2.8",
+    "gatsby-plugin-sitemap": "^5.4.0",
     "isomorphic-fetch": "^3.0.0",
     "multer": "^1.4.3",
     "package-name": "^0.1.0",
